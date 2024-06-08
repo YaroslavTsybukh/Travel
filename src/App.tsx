@@ -1,5 +1,14 @@
-import './styles/main.css';
+import { Header } from './components';
+
+import './styles/main.scss';
 
 export const App = () => {
-    return <div className="font-bold underline">Тест</div>;
+    return (
+        <>
+            <Header />
+            <div className="container">
+                <div>Тест</div>;
+            </div>
+        </>
+    );
 };
