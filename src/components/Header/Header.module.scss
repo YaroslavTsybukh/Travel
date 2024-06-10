@@ -1,0 +1,44 @@
+@import '/src/styles/variables';
+@import '/src/styles/mixins';
+
+.header {
+    margin: 20px 0;
+
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .infoBlock {
+        @include border-block;
+        padding: 0 8px 0 16px;
+    }
+
+    .trips,
+    .country {
+        @include text;
+        display: flex;
+
+        &::after {
+            content: '';
+            display: inline-block;
+            width: 0.5px;
+            background-color: $color-white;
+            margin: 0 20px;
+        }
+    }
+
+    .country::after {
+        margin-right: 0;
+    }
+
+    .createButton {
+        @include border-block;
+        padding: 0px 12px 0px 8px;
+        gap: 4px;
+    }
+
+    .textButton {
+        @include text;
+    }
+}

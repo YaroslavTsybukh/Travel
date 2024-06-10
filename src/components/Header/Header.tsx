@@ -1,18 +1,21 @@
 import { FC } from 'react';
-import { Icon } from '../Icon';
+import { Icon, Select } from '../index';
+import styles from './Header.module.scss';
 
 export const Header: FC = () => {
     return (
-        <header>
+        <header className={styles.header}>
             <div className="container">
-                <div className="info">
-                    <div className="info__trip">Trips</div>
-                    <div className="info__country">Iceland</div>
-                    <div className="info__days">7 days</div>
-                </div>
-                <div className="create-button">
-                    <Icon className="create-button__icon" name="plus" />
-                    <p className="creacte-button__text">Create</p>
+                <div className={styles.wrapper}>
+                    <div className={styles.infoBlock}>
+                        <div className={styles.trips}>Trips</div>
+                        <div className={styles.country}>Iceland</div>
+                        <Select />
+                    </div>
+                    <div className={styles.createButton}>
+                        <Icon name="plus" />
+                        <p className={styles.textButton}>Create</p>
+                    </div>
                 </div>
             </div>
         </header>

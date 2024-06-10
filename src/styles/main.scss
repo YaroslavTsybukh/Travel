@@ -35,6 +35,17 @@ img {
 
 html {
     font-family: 'SF Pro Text';
+    font-size: 15px;
     font-weight: normal;
     font-style: normal;
+}
+
+.container {
+    padding: 32px;
+    margin: 0 auto;
+}
+
+svg {
+    width: 24px;
+    height: 24px;
 }

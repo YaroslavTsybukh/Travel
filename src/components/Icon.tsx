@@ -1,7 +1,7 @@
 import { FC } from 'react';
 
 interface IIcon {
-    className: string;
+    className?: string;
     name: string;
 }
 
