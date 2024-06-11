@@ -1,0 +1,39 @@
+@import '/src/styles/mixins';
+@import '/src/styles/variables';
+
+.trip {
+    margin-top: 28px;
+
+    .wrapper {
+        @include border-block;
+
+        padding: 24px;
+    }
+
+    .tripInfo {
+        display: flex;
+        gap: 64px;
+        margin-right: 97px;
+    }
+
+    .title {
+        @include text($c-blue-1, 15, 400, 21, -0.2);
+    }
+
+    .text {
+        @include text($c-black-primary, 16, 600, 24, -0.3);
+    }
+
+    .button {
+        padding: 0px 12px 0px 12px;
+        border-radius: 8px;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    .buttonText {
+        @include text($c-purple-1, 15, 600, 32, -0.1);
+    }
+}

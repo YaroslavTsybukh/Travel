@@ -1,8 +1,9 @@
-@mixin text($color) {
+@mixin text($color, $font-size, $font-weight, $line-height, $letter-spacing) {
     color: $color;
-    font-weight: 600;
-    line-height: 32px;
-    letter-spacing: -0.1px;
+    font-weight: $font-weight;
+    font-size: #{$font-size}px;
+    line-height: #{$line-height}px;
+    letter-spacing: #{$letter-spacing}px;
 }
 
 @mixin border-block {
