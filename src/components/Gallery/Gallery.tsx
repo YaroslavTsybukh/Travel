@@ -1,4 +1,4 @@
-import { Image } from '../index';
+import { Icon, Image } from '../index';
 
 import styles from './Gallery.module.scss';
 
@@ -32,6 +32,13 @@ export const Gallery = () => {
                         picture1x="blue_1x"
                         picture2x="blue_2x"
                     />
+                    <div className={styles.button}>
+                        <Icon
+                            className={styles.allPhotoIcon}
+                            name="all-photos"
+                        />
+                        <p className={styles.buttonText}>All photos</p>
+                    </div>
                 </div>
             </div>
         </section>

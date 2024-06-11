@@ -2,7 +2,22 @@
     <symbol id="icon-plus" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M12 5.5V18.5M5.5 12L18.5 12" stroke="black" stroke-width="1.5" stroke-linecap="square"/>
     </symbol>
+    
     <symbol id="icon-arrow-down" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path fill-rule="evenodd" clip-rule="evenodd" d="M16.5623 8.94116L16.0017 9.43943L12 12.9965L7.99828 9.43943L7.43772 8.94116L6.44118 10.0623L7.00173 10.5605L11.5017 14.5605L12 15.0035L12.4983 14.5605L16.9983 10.5605L17.5588 10.0623L16.5623 8.94116Z" fill="#3C3C43" fill-opacity="0.5"/>
+    </symbol>
+
+    <symbol id="icon-all-photos" width="32.000000" height="32.000000" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <g clip-path="url(#clip1_471)">
+            <rect id="Rectangle 553" x="10.000000" y="10.000000" width="2.000000" height="2.000000" fill="#FFFFFF" fill-opacity="1.000000"/>
+            <rect id="Rectangle 556" x="10.000000" y="15.000000" width="2.000000" height="2.000000" fill="#FFFFFF" fill-opacity="1.000000"/>
+            <rect id="Rectangle 559" x="10.000000" y="20.000000" width="2.000000" height="2.000000" fill="#FFFFFF" fill-opacity="1.000000"/>
+            <rect id="Rectangle 554" x="15.000000" y="10.000000" width="2.000000" height="2.000000" fill="#FFFFFF" fill-opacity="1.000000"/>
+            <rect id="Rectangle 557" x="15.000000" y="15.000000" width="2.000000" height="2.000000" fill="#FFFFFF" fill-opacity="1.000000"/>
+            <rect id="Rectangle 560" x="15.000000" y="20.000000" width="2.000000" height="2.000000" fill="#FFFFFF" fill-opacity="1.000000"/>
+            <rect id="Rectangle 555" x="20.000000" y="10.000000" width="2.000000" height="2.000000" fill="#FFFFFF" fill-opacity="1.000000"/>
+            <rect id="Rectangle 558" x="20.000000" y="15.000000" width="2.000000" height="2.000000" fill="#FFFFFF" fill-opacity="1.000000"/>
+            <rect id="Rectangle 561" x="20.000000" y="20.000000" width="2.000000" height="2.000000" fill="#FFFFFF" fill-opacity="1.000000"/>
+        </g>
     </symbol>
 </svg>

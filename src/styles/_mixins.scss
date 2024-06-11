@@ -1,5 +1,5 @@
-@mixin text {
-    color: $color-black;
+@mixin text($color) {
+    color: $color;
     font-weight: 600;
     line-height: 32px;
     letter-spacing: -0.1px;

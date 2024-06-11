@@ -16,7 +16,7 @@
 
     .trips,
     .country {
-        @include text;
+        @include text($color-blackBase);
         display: flex;
 
         &::after {
@@ -39,6 +39,6 @@
     }
 
     .textButton {
-        @include text;
+        @include text($color-blackBase);
     }
 }

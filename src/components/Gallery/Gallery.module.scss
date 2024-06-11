@@ -1,3 +1,6 @@
+@import '/src/styles/variables';
+@import '/src/styles/mixins';
+
 .gallery {
     margin-top: 20px;
 
@@ -5,6 +8,7 @@
         display: grid;
         grid-template: repeat(2, 1fr) / repeat(12, 1fr);
         gap: 4px;
+        position: relative;
     }
 
     .skyPicture {
@@ -35,5 +39,30 @@
 
     .bluePicture img {
         border-radius: 0 0 24px 0;
+    }
+
+    .button {
+        position: absolute;
+        display: flex;
+        border-radius: 40px;
+        backdrop-filter: blur(24px);
+        background: $color-darkGrey;
+        padding: 0px 12px 0px 4px;
+        align-items: center;
+        bottom: 12px;
+        right: 12px;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    .allPhotoIcon {
+        width: 32px;
+        height: 32px;
+    }
+
+    .buttonText {
+        @include text($color-whiteBase);
     }
 }
