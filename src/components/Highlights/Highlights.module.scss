@@ -1,0 +1,76 @@
+@import '/src/styles/mixins';
+@import '/src/styles/variables';
+
+.highlights {
+    margin-top: 60px;
+
+    .head {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .heading {
+        @include text($c-black-primary, 28, 600, 36, 0);
+
+        font-family: 'SF Pro Display';
+    }
+
+    .buttons {
+        display: flex;
+        gap: 10px;
+    }
+
+    .wishlistBlock,
+    .shareBlock {
+        @include border-block(8);
+
+        display: flex;
+        align-items: center;
+        padding: 0px 12px 0px 4px;
+        height: 32px;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    .bookmarkIcon,
+    .shareIcon {
+        width: 32px;
+        height: 32px;
+    }
+
+    .wishlistText,
+    .shareText {
+        @include text($c-black-primary, 15, 600, 32, -0.1);
+    }
+
+    .content {
+        margin-top: 16px;
+    }
+
+    .user {
+        display: flex;
+        gap: 16px;
+        align-items: center;
+    }
+
+    .ava {
+        display: inline-block;
+        width: 32px;
+        height: 32px;
+    }
+
+    .title {
+        @include text($c-black-primary, 16, 600, 24, -0.3);
+    }
+
+    .specialization {
+        @include text($c-grey-3, 15, 400, 21, -0.2);
+    }
+
+    .description {
+        @include text($c-black-primary, 16, 400, 24, -0.41);
+        @extend .content;
+    }
+}

@@ -10,8 +10,9 @@
     }
 
     .infoBlock {
-        @include border-block;
+        @include border-block(16);
         padding: 0 8px 0 16px;
+        height: 32px;
     }
 
     .trips,
@@ -33,9 +34,10 @@
     }
 
     .createButton {
-        @include border-block;
+        @include border-block(16);
         padding: 0px 12px 0px 8px;
         gap: 4px;
+        height: 32px;
     }
 
     .textButton {

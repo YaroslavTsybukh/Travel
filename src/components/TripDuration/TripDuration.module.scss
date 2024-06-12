@@ -5,8 +5,9 @@
     margin-top: 28px;
 
     .wrapper {
-        @include border-block;
+        @include border-block(16);
 
+        width: 100%;
         padding: 24px;
     }
 
@@ -17,7 +18,7 @@
     }
 
     .title {
-        @include text($c-blue-1, 15, 400, 21, -0.2);
+        @include text($c-grey-3, 15, 400, 21, -0.2);
     }
 
     .text {

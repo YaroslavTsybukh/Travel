@@ -1,4 +1,4 @@
-import { Header, Gallery, TripDuration } from './components';
+import { Header, Gallery, TripDuration, Highlights } from './components';
 
 import './styles/main.scss';
 
@@ -9,6 +9,7 @@ export const App = () => {
             <main>
                 <Gallery />
                 <TripDuration />
+                <Highlights />
             </main>
         </>
     );
