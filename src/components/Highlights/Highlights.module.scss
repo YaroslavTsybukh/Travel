@@ -22,8 +22,13 @@
 
     .wishlistBlock,
     .shareBlock {
-        @include border-block(8);
+        @include border(
+            8,
+            0px 2px 3px 0px rgba(0, 0, 0, 0.03),
+            0px 0px 0px 0.5px rgba(151, 151, 151, 0.3)
+        );
 
+        align-items: center;
         display: flex;
         align-items: center;
         padding: 0px 12px 0px 4px;

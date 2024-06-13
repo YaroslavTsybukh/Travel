@@ -10,7 +10,13 @@
     }
 
     .infoBlock {
-        @include border-block(16);
+        @include border(
+            16,
+            0px 2px 3px 0px rgba(0, 0, 0, 0.03),
+            0px 0px 0px 0.5px rgba(151, 151, 151, 0.3)
+        );
+        display: inline-flex;
+        align-items: center;
         padding: 0 8px 0 16px;
         height: 32px;
     }
@@ -34,7 +40,13 @@
     }
 
     .createButton {
-        @include border-block(16);
+        @include border(
+            16,
+            0px 2px 3px 0px rgba(0, 0, 0, 0.03),
+            0px 0px 0px 0.5px rgba(151, 151, 151, 0.3)
+        );
+        display: inline-flex;
+        align-items: center;
         padding: 0px 12px 0px 8px;
         gap: 4px;
         height: 32px;
