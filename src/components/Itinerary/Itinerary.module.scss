@@ -7,6 +7,7 @@
     .heading {
         @include text($c-black-primary, 22, 600, 28, 0.35);
 
+        font-family: 'SF Pro Display';
         margin-bottom: 24px;
     }
 
