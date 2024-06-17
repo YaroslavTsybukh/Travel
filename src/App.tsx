@@ -4,6 +4,7 @@ import {
     TripDuration,
     Highlights,
     Itinerary,
+    Region,
 } from './components';
 
 import './styles/main.scss';
@@ -17,6 +18,7 @@ export const App = () => {
                 <TripDuration />
                 <Highlights />
                 <Itinerary />
+                <Region />
             </main>
         </>
     );

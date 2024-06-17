@@ -1,0 +1,69 @@
+@import '/src/styles/mixins';
+@import '/src/styles/variables';
+
+.region {
+    margin-top: 40px;
+
+    .subtitle {
+        display: flex;
+        gap: 16px;
+        margin-top: 4px;
+    }
+
+    .title {
+        @include text($c-black-primary, 20, 600, 24, 0.38);
+
+        font-family: 'SF Pro Display';
+    }
+
+    .info {
+        @include text($c-grey-3, 15, 400, 21, -0.2);
+    }
+
+    .description {
+        @include text($c-grey-3, 16, 400, 24, -0.32);
+
+        margin-top: 16px;
+    }
+
+    .highlights {
+        margin-top: 40px;
+    }
+
+    .highlightsHead {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .heading {
+        @include text($c-black-primary, 17, 600, 24, -0.41);
+    }
+
+    .buttonPlan {
+        @include border(
+            8,
+            0px 2px 3px 0px rgba(0, 0, 0, 0.03),
+            0px 0px 0px 0.5px rgba(151, 151, 151, 0.3)
+        );
+
+        display: inline-flex;
+        align-items: center;
+
+        padding: 0px 12px 0px 4px;
+        height: 32px;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    .planIcon {
+        width: 32px;
+        height: 32px;
+    }
+
+    .buttonPlanText {
+        @include text($c-black-primary, 15, 600, 32, -0.1);
+    }
+}

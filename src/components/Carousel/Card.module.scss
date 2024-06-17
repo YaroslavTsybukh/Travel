@@ -1,0 +1,68 @@
+@import '/src/styles/mixins';
+@import '/src/styles/variables';
+
+.card {
+    .cardImageBlock {
+        position: relative;
+        width: 216px;
+        height: 292px;
+    }
+
+    .badge {
+        @include text($c-grey-3, 13, 500, 32, -0.08);
+        @include border(8, 0px 2px 3px 0px rgba(0, 0, 0, 0.03));
+
+        padding: 0px 12px 0px 12px;
+        background: rgba(255, 255, 255, 0.5);
+        backdrop-filter: blur(24px);
+        position: absolute;
+        top: 16px;
+        left: 16px;
+        height: 32px;
+        max-width: 112px;
+        width: 100%;
+    }
+
+    .image {
+        display: inline-block;
+        height: 100%;
+
+        img {
+            border-radius: 16px;
+        }
+    }
+
+    .saveIcon {
+        position: absolute;
+        width: 32px;
+        height: 32px;
+        top: 12px;
+        right: 12px;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    .cardFooter {
+        margin-top: 8px;
+    }
+
+    .title {
+        @include text($c-black-primary, 17, 600, 24, -0.41);
+    }
+
+    .info {
+        display: flex;
+        margin-top: 4px;
+    }
+
+    .text {
+        @include text($c-grey-3, 15, 400, 21, -0.2);
+
+        &:first-child::after {
+            content: '·';
+            margin: 0 4px;
+        }
+    }
+}
